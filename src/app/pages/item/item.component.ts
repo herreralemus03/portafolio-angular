@@ -1,3 +1,4 @@
+import { ProductosService } from './../../services/productos.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

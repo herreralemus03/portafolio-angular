@@ -10,7 +10,8 @@ import { PortafolioComponent } from './pages/portafolio/portafolio.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './shared/loading/loading.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http'
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http'
   ],
   exports:[
     RouterModule,
+    LoadingComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
